@@ -1,16 +1,10 @@
-//1
-
-let arr = [1, 5, 10, 20, 34, 40, 66, 100, 112, 134];
-let max = Math.max(...arr);
-
-console.log(max);
-//2
-function palindrome(str) {
-  str = str.toLowerCase();
-  return str === str.split("").reverse().join("");
+function countUnitsInBinary(a) {
+  let count = 0;
+  while (a > 0) {
+    count += a & 1;
+    a >>= 1;
+  }
+  return count;
 }
-console.log(palindrome("шалаш"));
-console.log(palindrome("дерево"));
-console.log(palindrome("дед"));
-console.log(palindrome("Анна"));
-console.log(palindrome("мороз"));
+const result = countUnitsInBinary(230);
+console.log(result);
