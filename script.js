@@ -6,5 +6,5 @@ function countUnitsInBinary(a) {
   }
   return count;
 }
-const result = countUnitsInBinary(230);
+const result = countUnitsInBinary(255);
 console.log(result);
